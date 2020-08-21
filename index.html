@@ -185,11 +185,16 @@
                         <h3>[SIIM-ISIC Melanoma Classification] 
 				<br>Ensemble of EffNets + Xgboost</h3>
                         <p>
-                            (August 2020) The dataset appears to be 512 datasets concatenated where each sub dataset is believed
-				to be created by Sklearn's make_classification. EDA suggests that the data resides in 33 + x 
-				(where 0 <= x <= 14) dimensional space within 6 hyper-ellipsoids.  Each hyper-ellipsoid is a multivariate 
-				Gaussian distribution therefore the best classifiers to use are Quadratic Discriminant Anlysis, 
-				Pseudo Labeling and Gaussian Mixture Model. 
+                            (August 2020)In this competition, you need to identify melanoma in images of skin lesions.
+				This is a very challenging image classification task as seen by looking at the images provided. 
+				It is very difficult to recognize differences between images with and without melanoma. 
+				For this task, using computer aided diagnosis might be helpful for primarily steps and early detections.
+				Better detection might save thousands of lives.
+
+				The dataset contains images and metadata. On one hand, the images are transformed to TFRecords and used to
+				train an ensemble of EffNets with different parameters (metadata, upsampling, crop augmentation, image size, TTA...).
+				On the other hand, the metadata is used to train an XGBoost. Both predictions are combined using a weighted arithmetic mean.
+
                         </p>
                         <a href="https://github.com/aleixlopezpascual/aleixlopezpascual.github.io/tree/master/Projects/%5BSIIM-ISIC%20Melanoma%20Classification%5D%20Ensemble%20of%20EffNets%20%2B%20Xgboost">View Project</a>
                     </div>
