@@ -187,11 +187,7 @@
                         <p>
                             (August 2020)In this competition, you need to identify melanoma in images of skin lesions.
 				This is a very challenging image classification task as seen by looking at the images provided. 
-				It is very difficult to recognize differences between images with and without melanoma. 
-				For this task, using computer aided diagnosis might be helpful for primarily steps and early detections.
-				Better detection might save thousands of lives.
-
-				<br> The dataset contains images and metadata. On one hand, the images are transformed to TFRecords and used to
+				The dataset contains images and metadata. On one hand, the images are transformed to TFRecords and used to
 				train an ensemble of EffNets with different parameters (metadata, upsampling, crop augmentation, image size, TTA...).
 				On the other hand, the metadata is used to train an XGBoost. Both predictions are combined using a weighted arithmetic mean.
 
