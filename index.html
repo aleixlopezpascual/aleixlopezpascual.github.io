@@ -182,7 +182,29 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-		<div class="project shadow-large">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/halite.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>2020 Halite by Two Sigma</h3>
+                        <p>
+                            (September 2020) Halite is an online multiplayer game created by Two Sigma.
+                            In the game, four participants command ships to collect an energy source called halite.
+                            The player with the most halite at the end of the game wins. In this competition,
+                            you had to write your own intelligent bot to play the game. Due to the arbitrary
+                            number of units (ships/bases), a long episode duration, a dynamic opponent pool and
+                            a finite computation time, the problem was very difficult to tackle using Deep RL.
+                            Therefore, I decided to apply heuristics.
+                        </p>
+                        <a href="https://github.com/aleixlopezpascual/aleixlopezpascual.github.io/blob/master/Projects/2020%20Halite%20by%20Two%20Sigma/agent.ipynb">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+		        <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/siim-isic_melanoma_classification.png" />
                     </div>
@@ -190,12 +212,12 @@
                     <div class="project-info">
                         <h3>2020 SIIM-ISIC Melanoma Classification</h3>
                         <p>
-                            (August 2020) In this competition, you need to identify melanoma in images of skin lesions.
-		            This is a very challenging image classification task as seen by looking at the images provided. 
-			    The dataset contains images and metadata. On one hand, the images are transformed to TFRecords and used to
-			    train an ensemble of EffNets with different parameters (metadata, upsampling, crop augmentation, image size, TTA...).
-			    On the other hand, the metadata is used to train an XGBoost. Both predictions are combined using a weighted arithmetic mean.
-
+                            (August 2020) In this competition, you had to identify melanoma in images of skin lesions.
+		                    This is a very challenging image classification task as seen by looking at the images provided.
+			                The dataset contains images and metadata. On one hand, the images are transformed to TFRecords
+                            and used to train an ensemble of EffNets with different parameters (metadata, upsampling,
+                            crop augmentation, image size, TTA...). On the other hand, the metadata is used to train an XGBoost.
+                            Both predictions are combined using a weighted arithmetic mean.
                         </p>
                         <a href="https://github.com/aleixlopezpascual/aleixlopezpascual.github.io/tree/master/Projects/2020%20SIIM-ISIC%20Melanoma%20Classification">View Project</a>
                     </div>
@@ -203,7 +225,7 @@
                 </div>
                 <!-- End .project -->   
 		    
-		<div class="project shadow-large">
+		        <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/instant_gratification.jpg" />
                     </div>
@@ -211,11 +233,15 @@
                     <div class="project-info">
                         <h3> 2019 Kaggle Instant Gratification</h3>
                         <p>
-                            (June 2019) The dataset appears to be 512 datasets concatenated where each sub dataset is believed
-			    to be created by Sklearn's make_classification. EDA suggests that the data resides in 33 + x 
-			    (where 0 <= x <= 14) dimensional space within 6 hyper-ellipsoids.  Each hyper-ellipsoid is a multivariate 
-			    Gaussian distribution therefore the best classifiers to use are Quadratic Discriminant Anlysis, 
-			    Pseudo Labeling and Gaussian Mixture Model. 
+                            (June 2019) In this competition you had to solve a binary classification problem
+                            evaluated with AUC. The key factor of this contest was to infer that the data was
+                            synthetic, and that you could reverse-engineer how the data set was generated.
+                            The data set appeared to be 512 data sets concatenated where each sub dataset was
+                            believed to be created by Sklearn's make_classification. EDA suggested that the
+                            data resided in 33 + x (where 0 <= x <= 14) dimensional space within 6 hyper-ellipsoids.
+                            Each hyper-ellipsoid corresponded to a multivariate Gaussian distribution.
+                            Based on this information, I decided to apply Quadratic Discriminant Anlysis,
+                            Pseudo Labeling and Gaussian Mixture Models.
                         </p>
                         <a href="https://github.com/aleixlopezpascual/aleixlopezpascual.github.io/tree/master/Projects/2019%20Kaggle%20Instant%20Gratification/Notebook.ipynb">View Project</a>
                     </div>
@@ -231,10 +257,12 @@
                     <div class="project-info">
                         <h3>Hypothesis Testing and Unfolding</h3>
                         <p>
-                            (Jan 2018) We select signal-enriched subsamples out of the data sample (signal + background) and background control sample 
-			    (only background). In order to do so, we construct some test statistics to investigate the level of agreement
-			    with the hypothesis and we compare its performance. We use the spectral information to increase the significance 
-			    of signal detection. Finally, we simulate and solve an unfolding problem. 
+                            (Jan 2018) We select signal-enriched subsamples out of the data sample
+                            (signal + background) and background control sample (only background).
+                            In order to do so, we construct some test statistics to investigate
+                            the level of agreement with the hypothesis and we compare its performance.
+                            We use the spectral information to increase the significance
+			                of signal detection. Finally, we simulate and solve an unfolding problem.
                         </p>
                         <a href="https://github.com/aleixlopezpascual/aleixlopezpascual.github.io/tree/master/Projects/Hypothesis%20Testing%20and%20Unfolding">View Project</a>
                     </div>
@@ -250,10 +278,12 @@
                     <div class="project-info">
                         <h3>Parameter Estimation and Bayesian Statistics</h3>
                         <p>
-                            (Dec 2017) Given data from an LHC experiment produced in a certain decay channel of the Higgs particle,
-			    we compute the confidence interval for different confidence levels. We perform an exhaustive parameter 
-			    estimation and we construct the Bayesian posterior pdf using a Monte Carlo simulation. Finally, we sample the 
-			    posterior pdf using a Markov chain Monte Carlo with a Metropolis-Hastings sampler and a Gibbs sampler.
+                            (Dec 2017) Given data from an LHC experiment produced in a certain decay
+                            channel of the Higgs particle, we compute the confidence interval for
+                            different confidence levels. We perform an exhaustive parameter estimation and we
+                            construct the Bayesian posterior pdf using a Monte Carlo simulation.
+                            Finally, we sample the posterior pdf using a Markov chain Monte Carlo
+                            with a Metropolis-Hastings sampler and a Gibbs sampler.
                         </p>
                         <a href="https://github.com/aleixlopezpascual/aleixlopezpascual.github.io/tree/master/Projects/Parameter%20Estimation%20and%20Bayesian%20Statistics">View Project</a>
                     </div>
@@ -270,11 +300,13 @@
                     <div class="project-info">
                         <h3>Probability and Monte Carlo Techniques</h3>
                         <p>
-                            (Nov 2017) The angular distribution of the electrons produced in muon decays is described by some known distribution.
-			    This theory predicts the probability for an event to occur as a function of the scattering angle and the muon polarization (P).
-			    The main purpose of this project is to estimate P. We do it in two different ways: computing the basic statistical momentums and
-			    finding the most probable value of P using conditional probabilities. Furthermore, we elaborate some tests in order to verify the 
-		            process (Law of large numbers, Student's t-distribution, CLT and Pearson's chi-squared test).
+                            (Nov 2017) The angular distribution of the electrons produced in muon decays
+                            is described by some known distribution. This theory predicts the probability
+                            for an event to occur as a function of the scattering angle and the muon polarization (P).
+			                The main purpose of this project is to estimate P. We do it in two different ways:
+                            computing the basic statistical momentums and finding the most probable value of P
+                            using conditional probabilities. Furthermore, we elaborate some tests in order to verify the
+		                    process (Law of large numbers, Student's t-distribution, CLT and Pearson's chi-squared test).
                         </p>
                         <a href="https://github.com/aleixlopezpascual/aleixlopezpascual.github.io/tree/master/Projects/Probability%20and%20Monte%20Carlo%20Techniques">View Project</a>
                     </div>
@@ -300,17 +332,17 @@
                     <div class="project-info">
                         <h3>Veneziano amplitudes for the light-by-light scattering</h3>
                         <p>
-			    (Sep 2018) The anomalous magnetic moment of the muon induced by 
-			    the pseudoscalar-pole contribution to the hadronic light-by-light 
-			    scattering is considered using a description of the transition form factors in 
-			    the pion-pole approximation based on the Dual-Large Number of colors QCD model. 
-			    This framework improves considerably the VMD and LMD results by summing 
-			    up all the infinite number of zero width resonances that appear in the 
-			    large color limit, with masses and couplings fixed so that the form factors 
-			    become Euler Beta functions of the Veneziano type.
-			    We have obtained results which substantially increase the discrepancy 
-			    of 3-4 sigma between experiment and theory that has been obtained from the most recent 
-			    models and data. Therefore, it is a sign of New Physics more promising than before.
+                            (Sep 2018) The anomalous magnetic moment of the muon induced by
+                            the pseudoscalar-pole contribution to the hadronic light-by-light
+                            scattering is considered using a description of the transition form factors in
+                            the pion-pole approximation based on the Dual-Large Number of colors QCD model.
+                            This framework improves considerably the VMD and LMD results by summing
+                            up all the infinite number of zero width resonances that appear in the
+                            large color limit, with masses and couplings fixed so that the form factors
+                            become Euler Beta functions of the Veneziano type.
+                            We have obtained results which substantially increase the discrepancy
+                            of 3-4 sigma between experiment and theory that has been obtained from the most recent
+                            models and data. Therefore, it is a sign of New Physics more promising than before.
                         </p>
                         <a href="Publications/Veneziano amplitudes for the light-by-light scattering.pdf">View Publication</a>
                     </div>
@@ -327,7 +359,7 @@
                     <div class="project-info">
                         <h3>Identification of strongly correlated states of cold atoms</h3>
                         <p>
-                           (Jun 2017) Using a small sample of cold bosonic atoms submitted to a strong artificial magnetic
+                            (Jun 2017) Using a small sample of cold bosonic atoms submitted to a strong artificial magnetic
                             field, we obtain the ground state of the system in the lowest Landau level. Our goal is to identify
                             the ground state obtained with the known Laughlin state. The calculations have been done by
                             exact diagonalization of the corresponding Hamiltonian. The obtained ground state is a strongly
